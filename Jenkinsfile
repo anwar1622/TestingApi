@@ -19,7 +19,4 @@ pipeline {
                 }
             }
         }
-        success {
-            echo 'Build succeeded'
-        }
 }
