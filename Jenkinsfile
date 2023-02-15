@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn test -Dtest=TestRunnerProearn'
+                sh 'mvn test -Dtest=ExamplesTest'
             }
         }
     }
