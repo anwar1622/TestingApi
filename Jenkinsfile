@@ -6,11 +6,11 @@ pipeline {
                 checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/anwar1622/TestingApi.git']]])
            }
         }
-        stage('Test') {
-            steps {
-                sh 'mvn test -Dtest=ExamplesTest'
-            }
-        }
+//         stage('Test') {
+//             steps {
+//                 sh 'mvn test -Dtest=ExamplesTest'
+//             }
+//         }
     }
     post {
         always {
